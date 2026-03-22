@@ -1,4 +1,4 @@
-# Glitchcore Style Repo — Structure Guide for Copilot
+# Glitchcore Style Repo — Structure Guide
 
 ## Overview
 
@@ -8,38 +8,59 @@ This repository contains a comprehensive style system for glitchcore aesthetics 
 
 ---
 
-## File Organization
+## Directory Structure
 
 ```
-glitchcore-style-repo/
-├── repo-structure.md              ← YOU ARE HERE
-├── subcategories-reference-index.md   ← START HERE for subtype lookup
-├── sample-json-bundles.md         ← Example configs for implementation
-├──
-├── CORE SYSTEM FILES
-├── palette-energy-system.md       ← Color logic and emotional temperature
-├── signal-density-system.md       ← How much corruption vs preservation
-├── artifact-driver-taxonomy.md    ← All corruption mechanisms cataloged
-├──
-├── SUBJECT & COMPOSITION
-├── subject-treatment-rules.md     ← How to treat faces, bodies, objects
-├── face-and-body-anchor-profiles.md   ← Pre-configured anchor settings
-├── region-priority-map.md         ← Zone-by-zone preservation rules
-├──
-├── STYLE TRANSLATION
-├── style-language-to-code-translation.md  ← Turn descriptions into code
-├── glam-pop-glitch-vocabulary.md  ← Emotional language for bright glitch
-├──
-├── SPECIALIZED SYSTEMS
-├── text-screen-and-interface-debris.md    ← Text as visual corruption
-├── compression-and-codec-corruption.md    ← Digital damage aesthetics
-├── temporal-echo-and-motion-stacks.md     ← Time-based glitch
-├──
-├── AUDIO & INTERACTIVITY
-├── music-mode-profiles.md         ← Audio-reactive behavior maps
-├──
-└── TROUBLESHOOTING
-    └── drift-rescue-recipes.md    ← Fixes for when outputs go wrong
+glitchcore_style/
+│
+├── README.md                              ← Start here — full system overview
+├── repo-structure.md                      ← YOU ARE HERE
+│
+├── core/                                  ← Core style system
+│   ├── subcategories-reference-index.md   ← Master subtype map (start here)
+│   ├── subcategory-system-glitchcore.md   ← Full subtype catalog
+│   ├── palette-energy-system.md           ← Color logic and emotional temperature
+│   ├── signal-density-system.md           ← Corruption vs preservation levels
+│   ├── artifact-driver-taxonomy.md        ← All corruption mechanisms cataloged
+│   └── hybridization-rules.md             ← Rules for combining subtypes
+│
+├── subject/                               ← Subject & composition
+│   ├── subject-treatment-rules.md         ← How to treat faces, bodies, objects
+│   ├── face-and-body-anchor-profiles.md   ← Pre-configured anchor settings
+│   └── region-priority-map.md             ← Zone-by-zone preservation rules
+│
+├── effects/                               ← Specialized effect systems
+│   ├── text-screen-and-interface-debris.md    ← Text as visual corruption
+│   ├── compression-and-codec-corruption.md    ← Digital damage aesthetics
+│   └── temporal-echo-and-motion-stacks.md     ← Time-based glitch
+│
+├── audio/                                 ← Audio & interactivity
+│   ├── music-mode-profiles.md             ← Audio-reactive behavior maps
+│   ├── audio-mapping-recipes.md           ← Frequency-to-visual mappings
+│   └── shader-and-audio-reactive-system.md    ← Shader/audio integration
+│
+├── language/                              ← Style vocabulary & prompt construction
+│   ├── glam-pop-glitch-vocabulary.md      ← Emotional language for bright glitch
+│   ├── style-language-to-code-translation.md  ← Turn descriptions into code
+│   └── prompt-construction-system.md      ← How to build effective prompts
+│
+├── technical/                             ← Technical implementation
+│   ├── json-schema-style-spec.md          ← Formal JSON schema & validation
+│   ├── glsl-behavior-snippets.md          ← Ready-to-use shader code
+│   ├── shader-preset-bundles.md           ← Shader configuration bundles
+│   └── sample-json-bundles.md             ← Example configs for implementation
+│
+├── presets/                               ← Ready-to-use presets
+│   └── preset-library.md                  ← 10 pre-configured style presets
+│
+├── ai/                                    ← AI control & interface
+│   ├── ai-control-logic-map.md            ← Input parsing & decision trees
+│   └── user-facing-control-model.md       ← UI/UX control design
+│
+└── quality/                               ← Quality control & troubleshooting
+    ├── drift-rescue-recipes.md            ← Fixes for when outputs go wrong
+    ├── anti-drift-rules.md                ← How to prevent common drift types
+    └── image-evaluation-rubric.md         ← Scoring rubric for output quality
 ```
 
 ---
@@ -47,34 +68,34 @@ glitchcore-style-repo/
 ## Quick Start Paths
 
 ### "I need to pick a glitch style"
-→ `subcategories-reference-index.md`
+→ `core/subcategories-reference-index.md`
 
 ### "I need to understand color choices"
-→ `palette-energy-system.md`
+→ `core/palette-energy-system.md`
 
 ### "I need to know what corruption effects to use"
-→ `artifact-driver-taxonomy.md`
+→ `core/artifact-driver-taxonomy.md`
 
 ### "I need to preserve a face properly"
-→ `face-and-body-anchor-profiles.md` + `region-priority-map.md`
+→ `subject/face-and-body-anchor-profiles.md` + `subject/region-priority-map.md`
 
 ### "I need to make it react to music"
-→ `music-mode-profiles.md`
+→ `audio/music-mode-profiles.md`
 
 ### "I need to add text debris"
-→ `text-screen-and-interface-debris.md`
+→ `effects/text-screen-and-interface-debris.md`
 
 ### "I need compression damage"
-→ `compression-and-codec-corruption.md`
+→ `effects/compression-and-codec-corruption.md`
 
 ### "I need motion trails"
-→ `temporal-echo-and-motion-stacks.md`
+→ `effects/temporal-echo-and-motion-stacks.md`
 
 ### "The output looks wrong"
-→ `drift-rescue-recipes.md`
+→ `quality/drift-rescue-recipes.md`
 
 ### "I need example code/configs"
-→ `sample-json-bundles.md`
+→ `technical/sample-json-bundles.md`
 
 ---
 
@@ -96,7 +117,7 @@ Glitchcore has distinct subtypes, each with its own personality:
 | Surveillance | Watched, cold | Capture Degradation |
 | Glitter Signal | Glamorous, radiant | Overprint + Bloom |
 
-**Full details:** `subcategories-reference-index.md`
+**Full details:** `core/subcategories-reference-index.md`
 
 ---
 
@@ -118,7 +139,7 @@ ACCENT (5-10%) → Provides focal points
 | Phosphor Noir | Teal + Ice Blue | Remote, eerie |
 | Codec Candy Crash | Magenta + Flat Cyan | Bratty, broken |
 
-**Full details:** `palette-energy-system.md`
+**Full details:** `core/palette-energy-system.md`
 
 ---
 
@@ -139,7 +160,7 @@ The corruption mechanisms:
 | Sparkle Static | Glitter particles |
 | Color Field Collision | Clashing color zones |
 
-**Full details:** `artifact-driver-taxonomy.md`
+**Full details:** `core/artifact-driver-taxonomy.md`
 
 ---
 
@@ -153,7 +174,7 @@ The corruption mechanisms:
 | Overloaded | 80-90% | 10-20% | Extreme |
 | Pile-Up | 90-100% | 0-10% | Maximum chaos |
 
-**Full details:** `signal-density-system.md`
+**Full details:** `core/signal-density-system.md`
 
 ---
 
@@ -174,7 +195,7 @@ The rule: **Preserve one hot anchor, injure everything else.**
 3. Shoulder line
 4. Head position
 
-**Full details:** `face-and-body-anchor-profiles.md` + `region-priority-map.md`
+**Full details:** `subject/face-and-body-anchor-profiles.md` + `subject/region-priority-map.md`
 
 ---
 
@@ -182,27 +203,27 @@ The rule: **Preserve one hot anchor, injure everything else.**
 
 ### Workflow 1: Create a New Glitchcore Config
 
-1. **Pick subtype** → `subcategories-reference-index.md`
-2. **Choose palette** → `palette-energy-system.md`
-3. **Select drivers** → `artifact-driver-taxonomy.md`
-4. **Set density** → `signal-density-system.md`
-5. **Define anchors** → `face-and-body-anchor-profiles.md`
-6. **Write JSON** → `sample-json-bundles.md` for examples
+1. **Pick subtype** → `core/subcategories-reference-index.md`
+2. **Choose palette** → `core/palette-energy-system.md`
+3. **Select drivers** → `core/artifact-driver-taxonomy.md`
+4. **Set density** → `core/signal-density-system.md`
+5. **Define anchors** → `subject/face-and-body-anchor-profiles.md`
+6. **Write JSON** → `technical/sample-json-bundles.md` for examples
 
 ---
 
 ### Workflow 2: Fix a Drifted Output
 
-1. **Identify drift type** → `drift-rescue-recipes.md` (Section 11)
+1. **Identify drift type** → `quality/drift-rescue-recipes.md` (Section 11)
 2. **Apply rescue recipe** → Specific fix in that file
-3. **Adjust parameters** → `style-language-to-code-translation.md`
-4. **Verify anchors** → `region-priority-map.md`
+3. **Adjust parameters** → `language/style-language-to-code-translation.md`
+4. **Verify anchors** → `subject/region-priority-map.md`
 
 ---
 
 ### Workflow 3: Add Audio Reactivity
 
-1. **Pick audio mode** → `music-mode-profiles.md` (Section 1)
+1. **Pick audio mode** → `audio/music-mode-profiles.md` (Section 1)
 2. **Map frequencies** → Frequency-to-visual mapping in that file
 3. **Set state switches** → Chorus/verse/drop behavior
 4. **Test with music** → Adjust thresholds
@@ -211,10 +232,10 @@ The rule: **Preserve one hot anchor, injure everything else.**
 
 ### Workflow 4: Translate Description to Code
 
-1. **Parse emotion tags** → `glam-pop-glitch-vocabulary.md`
-2. **Map to drivers** → `style-language-to-code-translation.md`
+1. **Parse emotion tags** → `language/glam-pop-glitch-vocabulary.md`
+2. **Map to drivers** → `language/style-language-to-code-translation.md`
 3. **Set parameters** → Parameter tables in that file
-4. **Generate config** → JSON structure from `sample-json-bundles.md`
+4. **Generate config** → JSON structure from `technical/sample-json-bundles.md`
 
 ---
 
@@ -259,16 +280,16 @@ Time-based effects need clear hierarchy. Equal opacity = no present moment.
 
 | Drift | Symptom | Fix |
 |-------|---------|-----|
-| Face Destruction | Face unrecognizable | `drift-rescue-recipes.md` Section 1 |
-| Beauty Ad | Too polished, filter-like | `drift-rescue-recipes.md` Section 2 |
-| Rainbow Soup | All colors equal | `drift-rescue-recipes.md` Section 3 |
-| Generic Filter | Could be any glitch app | `drift-rescue-recipes.md` Section 4 |
-| Motion Blur | Generic blur, no frames | `drift-rescue-recipes.md` Section 5 |
-| Poster Design | Text too designed | `drift-rescue-recipes.md` Section 6 |
-| Cinematic CCTV | Too movie-like | `drift-rescue-recipes.md` Section 7 |
-| Op Art | Pattern too uniform | `drift-rescue-recipes.md` Section 8 |
-| Bad Quality | Just ugly, not aesthetic | `drift-rescue-recipes.md` Section 9 |
-| Effect Soup | No driver hierarchy | `drift-rescue-recipes.md` Section 10 |
+| Face Destruction | Face unrecognizable | `quality/drift-rescue-recipes.md` Section 1 |
+| Beauty Ad | Too polished, filter-like | `quality/drift-rescue-recipes.md` Section 2 |
+| Rainbow Soup | All colors equal | `quality/drift-rescue-recipes.md` Section 3 |
+| Generic Filter | Could be any glitch app | `quality/drift-rescue-recipes.md` Section 4 |
+| Motion Blur | Generic blur, no frames | `quality/drift-rescue-recipes.md` Section 5 |
+| Poster Design | Text too designed | `quality/drift-rescue-recipes.md` Section 6 |
+| Cinematic CCTV | Too movie-like | `quality/drift-rescue-recipes.md` Section 7 |
+| Op Art | Pattern too uniform | `quality/drift-rescue-recipes.md` Section 8 |
+| Bad Quality | Just ugly, not aesthetic | `quality/drift-rescue-recipes.md` Section 9 |
+| Effect Soup | No driver hierarchy | `quality/drift-rescue-recipes.md` Section 10 |
 
 ---
 
@@ -292,22 +313,22 @@ Time-based effects need clear hierarchy. Equal opacity = no present moment.
 ## File Relationships
 
 ```
-subcategories-reference-index.md
-    ├── palette-energy-system.md
-    ├── artifact-driver-taxonomy.md
-    ├── signal-density-system.md
-    └── face-and-body-anchor-profiles.md
+core/subcategories-reference-index.md
+    ├── core/palette-energy-system.md
+    ├── core/artifact-driver-taxonomy.md
+    ├── core/signal-density-system.md
+    └── subject/face-and-body-anchor-profiles.md
 
-sample-json-bundles.md
+technical/sample-json-bundles.md
     ├── All core files (examples reference everything)
 
-style-language-to-code-translation.md
-    ├── glam-pop-glitch-vocabulary.md (emotion terms)
-    ├── palette-energy-system.md (color codes)
-    ├── artifact-driver-taxonomy.md (driver codes)
-    └── signal-density-system.md (density codes)
+language/style-language-to-code-translation.md
+    ├── language/glam-pop-glitch-vocabulary.md (emotion terms)
+    ├── core/palette-energy-system.md (color codes)
+    ├── core/artifact-driver-taxonomy.md (driver codes)
+    └── core/signal-density-system.md (density codes)
 
-drift-rescue-recipes.md
+quality/drift-rescue-recipes.md
     ├── References all files for fixes
     └── Cross-references specific sections
 ```
