@@ -63,7 +63,7 @@ Hyperpop bright, seductive, glossy digital corruption. Beauty + damage in tensio
 **See Also:**
 - `palette-energy-system.md` — Hyperpop Rupture
 - `artifact-driver-taxonomy.md` — Channel Split
-- `drift-rescue-recipes.md` — Beauty Ad Drift
+- `../quality/drift-rescue-recipes.md` — Beauty Ad Drift
 
 ---
 
@@ -160,7 +160,7 @@ Temporal echoes, motion trails, multiple moments visible at once.
 - Kinetic energy
 
 **See Also:**
-- `temporal-echo-and-motion-stacks.md`
+- `../effects/temporal-echo-and-motion-stacks.md`
 - `artifact-driver-taxonomy.md` — Temporal Echo
 
 ---
@@ -210,7 +210,7 @@ Soft, dreamy, dissociative. Gentle corruption with romantic fragility.
 
 **See Also:**
 - `palette-energy-system.md` — Pastel Signal Melt
-- `glam-pop-glitch-vocabulary.md` — Dreamy
+- `../language/glam-pop-glitch-vocabulary.md` — Dreamy
 
 ---
 
@@ -258,8 +258,8 @@ Internet-broken, bratty, cheap-beautiful. Compression damage as glamour.
 - Digital damage
 
 **See Also:**
-- `compression-and-codec-corruption.md`
-- `glam-pop-glitch-vocabulary.md` — Bratty
+- `../effects/compression-and-codec-corruption.md`
+- `../language/glam-pop-glitch-vocabulary.md` — Bratty
 
 ---
 
@@ -307,8 +307,8 @@ Confessional, lonely, mediated. Text as emotional debris.
 - Mediated intimacy
 
 **See Also:**
-- `text-screen-and-interface-debris.md`
-- `glam-pop-glitch-vocabulary.md` — Lonely
+- `../effects/text-screen-and-interface-debris.md`
+- `../language/glam-pop-glitch-vocabulary.md` — Lonely
 
 ---
 
@@ -455,7 +455,7 @@ Glamorous, radiant, expensive. Gloss + sparkle + overprint.
 
 **See Also:**
 - `palette-energy-system.md` — Gloss Electric Glam
-- `glam-pop-glitch-vocabulary.md` — Glamorous
+- `../language/glam-pop-glitch-vocabulary.md` — Glamorous
 
 ---
 
@@ -592,20 +592,20 @@ Mood + mediated language
 
 | Topic | File |
 |-------|------|
-| JSON examples | `sample-json-bundles.md` |
-| Subject treatment | `subject-treatment-rules.md` |
-| Audio modes | `music-mode-profiles.md` |
-| Region priority | `region-priority-map.md` |
-| Language → code | `style-language-to-code-translation.md` |
-| Anchor profiles | `face-and-body-anchor-profiles.md` |
-| Drift fixes | `drift-rescue-recipes.md` |
+| JSON examples | `../technical/sample-json-bundles.md` |
+| Subject treatment | `../subject/subject-treatment-rules.md` |
+| Audio modes | `../audio/music-mode-profiles.md` |
+| Region priority | `../subject/region-priority-map.md` |
+| Language → code | `../language/style-language-to-code-translation.md` |
+| Anchor profiles | `../subject/face-and-body-anchor-profiles.md` |
+| Drift fixes | `../quality/drift-rescue-recipes.md` |
 | Palettes | `palette-energy-system.md` |
 | Density | `signal-density-system.md` |
 | Drivers | `artifact-driver-taxonomy.md` |
-| Vocabulary | `glam-pop-glitch-vocabulary.md` |
-| Text | `text-screen-and-interface-debris.md` |
-| Compression | `compression-and-codec-corruption.md` |
-| Temporal | `temporal-echo-and-motion-stacks.md` |
+| Vocabulary | `../language/glam-pop-glitch-vocabulary.md` |
+| Text | `../effects/text-screen-and-interface-debris.md` |
+| Compression | `../effects/compression-and-codec-corruption.md` |
+| Temporal | `../effects/temporal-echo-and-motion-stacks.md` |
 
 ---
 
